@@ -52,7 +52,7 @@ jobs:
       ci_target_sdk_name: rebelfork-sdk-Web-lib-latest.zip
       ci_emsdk_version: latest
       ci_build_mode: ${{ matrix.ci_build_mode }}
-      ci_publish: ${{ github.ref == 'refs/heads/master' && github.repository == 'rbfx/sample-project' && matrix.ci_build_mode == 'sdk'}}
+      ci_publish: ${{ github.ref == 'refs/heads/master' && github.repository == 'DemonessFreya/sample-rbfx-project' && matrix.ci_build_mode == 'sdk'}}
       BINARYEN_CORES: 1
 
     steps:
@@ -153,7 +153,7 @@ jobs:
       ci_platform: windows
       ci_target_sdk_name: rebelfork-sdk-Windows-msvc-dll-x64-latest.zip
       ci_build_mode: ${{ matrix.ci_build_mode }}
-      ci_publish: ${{ github.ref == 'refs/heads/master' && github.repository == 'rbfx/sample-project' && matrix.ci_build_mode == 'sdk'}}
+      ci_publish: ${{ github.ref == 'refs/heads/master' && github.repository == 'DemonessFreya/sample-rbfx-project' && matrix.ci_build_mode == 'sdk'}}
       BUTLER_API_KEY: ${{ secrets.BUTLER_API_KEY }}
 
     steps:
