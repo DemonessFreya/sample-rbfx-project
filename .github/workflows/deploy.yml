@@ -132,8 +132,8 @@ jobs:
         with:
           butlerApiKey: ${{ secrets.BUTLER_API_KEY }}
           gameData: ${{ github.workspace }}/cmake-build/bin/project
-          itchUsername: eugeneko
-          itchGameId: sample-project
+          itchUsername: DemonessFreya
+          itchGameId: the-worst-game
           buildChannel: web
 
   # Build the project for Windows using both engine SDK and engine in subdirectory.
@@ -217,4 +217,4 @@ jobs:
       - name: Publish
         if: ${{ env.ci_publish }}
         run: |
-          butler push "${{ env.ci_build_dir }}/bin/project" "eugeneko/sample-project:windows"
+          butler push "${{ env.ci_build_dir }}/bin/project" "DemonessFreya/the-worst-game:windows"
